@@ -170,7 +170,7 @@ const App = () => {
             <div className="w-1 h-1 bg-rose-100 rounded-full hidden md:block"></div>
             <div className="flex items-center gap-2 text-slate-400 italic text-xs">
               <Clock size={12} className="text-rose-300" />
-              <span>Sincronizado cada hora</span>
+              <span>Sincronizado cada 30 minutos</span>
             </div>
           </div>
         </section>
