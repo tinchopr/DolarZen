@@ -34,7 +34,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(null);
-  const [nextRefresh, setNextRefresh] = useState(3600); // Segundos para el próximo refresh
+  const [nextRefresh, setNextRefresh] = useState(1800); // Segundos para el próximo refresh
 
   // Inyectar fuentes Zen
   useEffect(() => {
@@ -72,7 +72,7 @@ const App = () => {
         setLastUpdated(processedData[0].fecha);
       }
       setLoading(false);
-      setNextRefresh(3600); // Reiniciar contador de 1 hora
+      setNextRefresh(1800); // Reiniciar contador de 30 minutos
     } catch (err) {
       setError(err.message);
       setLoading(false);
