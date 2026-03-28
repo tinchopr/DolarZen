@@ -155,11 +155,11 @@ const App = () => {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 py-12">
+      <main className="max-w-6xl mx-auto px-6 py-6">
         {/* Hero Section */}
-        <section className="mb-12 text-center md:text-left relative">
+        <section className="mb-6 text-center md:text-left relative">
           <div className="absolute -top-16 -left-16 w-64 h-64 bg-rose-50 rounded-full blur-[80px] -z-10 opacity-60"></div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight italic" style={{ fontFamily: zenStyles.titleFont }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3 tracking-tight italic" style={{ fontFamily: zenStyles.titleFont }}>
             Mercado en <span className="text-rose-600 font-bold">Armonía</span>
           </h2>
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-5">
@@ -184,7 +184,7 @@ const App = () => {
             <p className="text-xs text-slate-400 leading-relaxed">{error}</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {loading ? (
               Array(6).fill(0).map((_, i) => (
                 <div key={i} className="h-48 bg-white/50 rounded-[32px] border border-slate-50 animate-pulse shadow-sm"></div>
@@ -196,10 +196,10 @@ const App = () => {
                 return (
                   <div 
                     key={dolar.casa}
-                    className="bg-white rounded-[32px] border border-slate-50 p-6 hover:shadow-xl hover:shadow-rose-100/20 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between"
+                    className="bg-white rounded-[32px] border border-slate-50 p-4 hover:shadow-xl hover:shadow-rose-100/20 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between"
                   >
                     <div>
-                      <div className="flex justify-between items-start mb-6">
+                      <div className="flex justify-between items-start mb-4">
                         <div>
                           <span className="text-[9px] font-bold text-rose-300 uppercase tracking-[0.4em] block mb-1">
                             Tipo
@@ -213,7 +213,7 @@ const App = () => {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="grid grid-cols-2 gap-4 mb-4">
                         <div className="space-y-1">
                           <p className="text-[9px] font-semibold text-slate-300 uppercase tracking-widest">Compra</p>
                           <p className="text-lg font-medium text-slate-500">
