@@ -83,10 +83,10 @@ const App = () => {
   useEffect(() => {
     fetchData();
 
-    // Intervalo de actualización cada 1 hora (3600000 ms)
+    // Intervalo de actualización cada 30 minutos (1800000 ms)
     const apiInterval = setInterval(() => {
       fetchData(true);
-    }, 3600000);
+    }, 1800000);
 
     // Intervalo para el contador visual
     const timerInterval = setInterval(() => {
