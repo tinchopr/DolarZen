@@ -10,7 +10,7 @@ import {
   Clock
 } from 'lucide-react';
 
-// Componente de Logo inspirado en el Monte Fuji, Pagoda y Sakura
+// Componente de Logo inspirado en el Monte Fuji, Pagoda y Sakura 
 const JapanLogo = () => (
   <svg viewBox="0 0 100 100" className="w-10 h-10">
     <circle cx="50" cy="50" r="45" fill="#fff1f2" />
